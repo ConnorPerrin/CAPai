@@ -1,0 +1,42 @@
+\doxysection{Matrix.\+h}
+\hypertarget{Matrix_8h_source}{}\label{Matrix_8h_source}\index{include/matrix/Matrix.h@{include/matrix/Matrix.h}}
+\mbox{\hyperlink{Matrix_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classMatrix}{Matrix}}\ \{}
+\DoxyCodeLine{00005\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00006\ \ \ \ \ \textcolor{keywordtype}{int}\ m\_rows;}
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{keywordtype}{int}\ m\_cols;}
+\DoxyCodeLine{00008\ \ \ \ \ std::vector<std::vector<double>>\ m\_data;}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00011\ \ \ \ \ \mbox{\hyperlink{classMatrix_a2dba13c45127354c9f75ef576f49269b}{Matrix}}();}
+\DoxyCodeLine{00012\ \ \ \ \ \mbox{\hyperlink{classMatrix_a2dba13c45127354c9f75ef576f49269b}{Matrix}}(\textcolor{keywordtype}{int}\ p\_rows,\ \textcolor{keywordtype}{int}\ p\_cols);}
+\DoxyCodeLine{00013\ \ \ \ \ \mbox{\hyperlink{classMatrix_a2dba13c45127354c9f75ef576f49269b}{Matrix}}(\textcolor{keywordtype}{int}\ p\_rows,\ \textcolor{keywordtype}{int}\ p\_cols,\ std::vector<std::vector<double>>\ p\_data);}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{comment}{//\ Assignment\ Operator}}
+\DoxyCodeLine{00016\ \ \ \ \ \mbox{\hyperlink{classMatrix}{Matrix}}\&\ \mbox{\hyperlink{classMatrix_a639135233e3348f7a26585fab41a5a57}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classMatrix}{Matrix}}\&\ p\_other);}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{comment}{//\ Element\ Access}}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{double}\&\ \mbox{\hyperlink{classMatrix_ae0af60a11ec3d088978bfb2506ff86da}{operator()}}(\textcolor{keywordtype}{int}\ p\_row,\ \textcolor{keywordtype}{int}\ p\_col);}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\&\ \mbox{\hyperlink{classMatrix_ae0af60a11ec3d088978bfb2506ff86da}{operator()}}(\textcolor{keywordtype}{int}\ p\_row,\ \textcolor{keywordtype}{int}\ p\_col)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{comment}{//\ Matrix\ Operations}}
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{classMatrix}{Matrix}}\ \mbox{\hyperlink{classMatrix_a924305f95e834243515dbb15126ddebb}{operator+}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classMatrix}{Matrix}}\&\ p\_other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{classMatrix}{Matrix}}\ \mbox{\hyperlink{classMatrix_aba40a8a920162bceef7771fc9dc3d118}{operator-\/}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classMatrix}{Matrix}}\&\ p\_other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{classMatrix}{Matrix}}\ \mbox{\hyperlink{classMatrix_a7bb1fa9276993667726903cf190fe5dc}{operator*}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classMatrix}{Matrix}}\&\ p\_other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00026\ \ \ \ \ }
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{classMatrix}{Matrix}}\ \mbox{\hyperlink{classMatrix_a759661b75b9681f3a89ff75e27933b3a}{transpose}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{classMatrix}{Matrix}}\ \mbox{\hyperlink{classMatrix_aed783715f468025bf78dc5e4c0dc7e6e}{dot\_product}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classMatrix}{Matrix}}\&\ p\_other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{comment}{//\ Utility\ Functions}}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classMatrix_a0fc53752b2f67ada126c2d53a157ee7c}{get\_rows}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classMatrix_a3c7ae73d23a17db578f7226ec4030050}{get\_cols}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00033\ \ \ \ \ std::vector<std::vector<double>>\ \mbox{\hyperlink{classMatrix_a868b314143fce6ccdb0f7b9674256023}{get\_data}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classMatrix_a99ba97122b8fdd54e95290caf80fc8e2}{print}}();\ \ }
+\DoxyCodeLine{00036\ \};}
+
+\end{DoxyCode}
