@@ -8,33 +8,31 @@
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classMatrix_a2dba13c45127354c9f75ef576f49269b}{Matrix}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Default constructor for the \doxylink{classMatrix}{Matrix} class. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classMatrix_ac6aba50a4e85b9e11597c8ee200c3072}{Matrix}} (int p\+\_\+rows, int p\+\_\+cols)
-\item 
+\begin{DoxyCompactList}\small\item\em Constructor for the \doxylink{classMatrix}{Matrix} class with specified rows and columns. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classMatrix_a4279d283a3be2508bab4d99380ece3c1}{Matrix}} (int p\+\_\+rows, int p\+\_\+cols, std\+::vector$<$ std\+::vector$<$ double $>$ $>$ p\+\_\+data)
-\item 
+\begin{DoxyCompactList}\small\item\em Constructor for the \doxylink{classMatrix}{Matrix} class with specified rows, columns, and data. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classMatrix}{Matrix}} \& \mbox{\hyperlink{classMatrix_a639135233e3348f7a26585fab41a5a57}{operator=}} (const \mbox{\hyperlink{classMatrix}{Matrix}} \&p\+\_\+other)
-\item 
+\begin{DoxyCompactList}\small\item\em Assignment operator for the \doxylink{classMatrix}{Matrix} class. \end{DoxyCompactList}\item 
 double \& \mbox{\hyperlink{classMatrix_ae0af60a11ec3d088978bfb2506ff86da}{operator()}} (int p\+\_\+row, int p\+\_\+col)
-\item 
+\begin{DoxyCompactList}\small\item\em Element access operator (non-\/const). \end{DoxyCompactList}\item 
 const double \& \mbox{\hyperlink{classMatrix_aa351bfbb2f08beca05ed321245fcfe39}{operator()}} (int p\+\_\+row, int p\+\_\+col) const
-\item 
+\begin{DoxyCompactList}\small\item\em Element access operator (const). \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classMatrix}{Matrix}} \mbox{\hyperlink{classMatrix_a924305f95e834243515dbb15126ddebb}{operator+}} (const \mbox{\hyperlink{classMatrix}{Matrix}} \&p\+\_\+other) const
-\item 
+\begin{DoxyCompactList}\small\item\em Addition operator for matrices. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classMatrix}{Matrix}} \mbox{\hyperlink{classMatrix_aba40a8a920162bceef7771fc9dc3d118}{operator-\/}} (const \mbox{\hyperlink{classMatrix}{Matrix}} \&p\+\_\+other) const
-\item 
+\begin{DoxyCompactList}\small\item\em Subtraction operator for matrices. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classMatrix}{Matrix}} \mbox{\hyperlink{classMatrix_a7bb1fa9276993667726903cf190fe5dc}{operator\texorpdfstring{$\ast$}{*}}} (const \mbox{\hyperlink{classMatrix}{Matrix}} \&p\+\_\+other) const
-\item 
+\begin{DoxyCompactList}\small\item\em Multiplication operator for matrices. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classMatrix}{Matrix}} \mbox{\hyperlink{classMatrix_a759661b75b9681f3a89ff75e27933b3a}{transpose}} () const
-\item 
-\mbox{\hyperlink{classMatrix}{Matrix}} \mbox{\hyperlink{classMatrix_aed783715f468025bf78dc5e4c0dc7e6e}{dot\+\_\+product}} (const \mbox{\hyperlink{classMatrix}{Matrix}} \&p\+\_\+other) const
-\begin{DoxyCompactList}\small\item\em Perform element-\/wise multiplication (dot product) of two matrices. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Transpose the matrix. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classMatrix_a0fc53752b2f67ada126c2d53a157ee7c}{get\+\_\+rows}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Get the number of rows in the matrix. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classMatrix_a3c7ae73d23a17db578f7226ec4030050}{get\+\_\+cols}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Get the number of columns in the matrix. \end{DoxyCompactList}\item 
 std\+::vector$<$ std\+::vector$<$ double $>$ $>$ \mbox{\hyperlink{classMatrix_a868b314143fce6ccdb0f7b9674256023}{get\+\_\+data}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Get the data of the matrix. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classMatrix_a99ba97122b8fdd54e95290caf80fc8e2}{print}} ()
 \begin{DoxyCompactList}\small\item\em Print the matrix to the console. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
@@ -46,12 +44,27 @@ void \mbox{\hyperlink{classMatrix_a99ba97122b8fdd54e95290caf80fc8e2}{print}} ()
 \doxysubsubsection{\texorpdfstring{Matrix()}{Matrix()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
 {\footnotesize\ttfamily Matrix\+::\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+Default constructor for the \doxylink{classMatrix}{Matrix} class. 
+
 \Hypertarget{classMatrix_ac6aba50a4e85b9e11597c8ee200c3072}\label{classMatrix_ac6aba50a4e85b9e11597c8ee200c3072} 
 \index{Matrix@{Matrix}!Matrix@{Matrix}}
 \index{Matrix@{Matrix}!Matrix@{Matrix}}
 \doxysubsubsection{\texorpdfstring{Matrix()}{Matrix()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
 {\footnotesize\ttfamily Matrix\+::\+Matrix (\begin{DoxyParamCaption}\item[{int}]{p\+\_\+rows,  }\item[{int}]{p\+\_\+cols }\end{DoxyParamCaption})}
 
+
+
+Constructor for the \doxylink{classMatrix}{Matrix} class with specified rows and columns. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+rows} & Number of rows. \\
+\hline
+{\em p\+\_\+cols} & Number of columns. \\
+\hline
+\end{DoxyParams}
 \Hypertarget{classMatrix_a4279d283a3be2508bab4d99380ece3c1}\label{classMatrix_a4279d283a3be2508bab4d99380ece3c1} 
 \index{Matrix@{Matrix}!Matrix@{Matrix}}
 \index{Matrix@{Matrix}!Matrix@{Matrix}}
@@ -60,16 +73,108 @@ void \mbox{\hyperlink{classMatrix_a99ba97122b8fdd54e95290caf80fc8e2}{print}} ()
 
 
 
+Constructor for the \doxylink{classMatrix}{Matrix} class with specified rows, columns, and data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+rows} & Number of rows. \\
+\hline
+{\em p\+\_\+cols} & Number of columns. \\
+\hline
+{\em p\+\_\+data} & Data to initialize the matrix with. \\
+\hline
+\end{DoxyParams}
+
+
 \doxysubsection{Member Function Documentation}
-\Hypertarget{classMatrix_aed783715f468025bf78dc5e4c0dc7e6e}\label{classMatrix_aed783715f468025bf78dc5e4c0dc7e6e} 
-\index{Matrix@{Matrix}!dot\_product@{dot\_product}}
-\index{dot\_product@{dot\_product}!Matrix@{Matrix}}
-\doxysubsubsection{\texorpdfstring{dot\_product()}{dot\_product()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classMatrix}{Matrix}} Matrix\+::dot\+\_\+product (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMatrix}{Matrix}} \&}]{p\+\_\+other }\end{DoxyParamCaption}) const}
+\Hypertarget{classMatrix_a3c7ae73d23a17db578f7226ec4030050}\label{classMatrix_a3c7ae73d23a17db578f7226ec4030050} 
+\index{Matrix@{Matrix}!get\_cols@{get\_cols}}
+\index{get\_cols@{get\_cols}!Matrix@{Matrix}}
+\doxysubsubsection{\texorpdfstring{get\_cols()}{get\_cols()}}
+{\footnotesize\ttfamily int Matrix\+::get\+\_\+cols (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 
 
-Perform element-\/wise multiplication (dot product) of two matrices. 
+Get the number of columns in the matrix. 
+
+\begin{DoxyReturn}{Returns}
+Number of columns. 
+\end{DoxyReturn}
+\Hypertarget{classMatrix_a868b314143fce6ccdb0f7b9674256023}\label{classMatrix_a868b314143fce6ccdb0f7b9674256023} 
+\index{Matrix@{Matrix}!get\_data@{get\_data}}
+\index{get\_data@{get\_data}!Matrix@{Matrix}}
+\doxysubsubsection{\texorpdfstring{get\_data()}{get\_data()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::vector$<$ double $>$ $>$ Matrix\+::get\+\_\+data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the data of the matrix. 
+
+\begin{DoxyReturn}{Returns}
+Data of the matrix. 
+\end{DoxyReturn}
+\Hypertarget{classMatrix_a0fc53752b2f67ada126c2d53a157ee7c}\label{classMatrix_a0fc53752b2f67ada126c2d53a157ee7c} 
+\index{Matrix@{Matrix}!get\_rows@{get\_rows}}
+\index{get\_rows@{get\_rows}!Matrix@{Matrix}}
+\doxysubsubsection{\texorpdfstring{get\_rows()}{get\_rows()}}
+{\footnotesize\ttfamily int Matrix\+::get\+\_\+rows (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the number of rows in the matrix. 
+
+\begin{DoxyReturn}{Returns}
+Number of rows. 
+\end{DoxyReturn}
+\Hypertarget{classMatrix_ae0af60a11ec3d088978bfb2506ff86da}\label{classMatrix_ae0af60a11ec3d088978bfb2506ff86da} 
+\index{Matrix@{Matrix}!operator()@{operator()}}
+\index{operator()@{operator()}!Matrix@{Matrix}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily double \& Matrix\+::operator() (\begin{DoxyParamCaption}\item[{int}]{p\+\_\+row,  }\item[{int}]{p\+\_\+col }\end{DoxyParamCaption})}
+
+
+
+Element access operator (non-\/const). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+row} & Row index. \\
+\hline
+{\em p\+\_\+col} & Column index. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Reference to the element at the specified position. 
+\end{DoxyReturn}
+\Hypertarget{classMatrix_aa351bfbb2f08beca05ed321245fcfe39}\label{classMatrix_aa351bfbb2f08beca05ed321245fcfe39} 
+\index{Matrix@{Matrix}!operator()@{operator()}}
+\index{operator()@{operator()}!Matrix@{Matrix}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const double \& Matrix\+::operator() (\begin{DoxyParamCaption}\item[{int}]{p\+\_\+row,  }\item[{int}]{p\+\_\+col }\end{DoxyParamCaption}) const}
+
+
+
+Element access operator (const). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+row} & Row index. \\
+\hline
+{\em p\+\_\+col} & Column index. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Const reference to the element at the specified position. 
+\end{DoxyReturn}
+\Hypertarget{classMatrix_a7bb1fa9276993667726903cf190fe5dc}\label{classMatrix_a7bb1fa9276993667726903cf190fe5dc} 
+\index{Matrix@{Matrix}!operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}}
+\index{operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}!Matrix@{Matrix}}
+\doxysubsubsection{\texorpdfstring{operator\texorpdfstring{$\ast$}{*}()}{operator*()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMatrix}{Matrix}} Matrix\+::operator\texorpdfstring{$\ast$}{*} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMatrix}{Matrix}} \&}]{p\+\_\+other }\end{DoxyParamCaption}) const}
+
+
+
+Multiplication operator for matrices. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -77,67 +182,77 @@ Perform element-\/wise multiplication (dot product) of two matrices.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-Resulting matrix after element-\/wise multiplication. 
+Resulting matrix after multiplication. 
 \end{DoxyReturn}
 
 \begin{DoxyExceptions}{Exceptions}
-{\em std\+::invalid\+\_\+argument} & if matrices are not of the same size. \\
+{\em std\+::invalid\+\_\+argument} & if matrices have incompatible dimensions. \\
 \hline
 \end{DoxyExceptions}
-\Hypertarget{classMatrix_a3c7ae73d23a17db578f7226ec4030050}\label{classMatrix_a3c7ae73d23a17db578f7226ec4030050} 
-\index{Matrix@{Matrix}!get\_cols@{get\_cols}}
-\index{get\_cols@{get\_cols}!Matrix@{Matrix}}
-\doxysubsubsection{\texorpdfstring{get\_cols()}{get\_cols()}}
-{\footnotesize\ttfamily int Matrix\+::get\+\_\+cols (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
-
-\Hypertarget{classMatrix_a868b314143fce6ccdb0f7b9674256023}\label{classMatrix_a868b314143fce6ccdb0f7b9674256023} 
-\index{Matrix@{Matrix}!get\_data@{get\_data}}
-\index{get\_data@{get\_data}!Matrix@{Matrix}}
-\doxysubsubsection{\texorpdfstring{get\_data()}{get\_data()}}
-{\footnotesize\ttfamily std\+::vector$<$ std\+::vector$<$ double $>$ $>$ Matrix\+::get\+\_\+data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
-
-\Hypertarget{classMatrix_a0fc53752b2f67ada126c2d53a157ee7c}\label{classMatrix_a0fc53752b2f67ada126c2d53a157ee7c} 
-\index{Matrix@{Matrix}!get\_rows@{get\_rows}}
-\index{get\_rows@{get\_rows}!Matrix@{Matrix}}
-\doxysubsubsection{\texorpdfstring{get\_rows()}{get\_rows()}}
-{\footnotesize\ttfamily int Matrix\+::get\+\_\+rows (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
-
-\Hypertarget{classMatrix_ae0af60a11ec3d088978bfb2506ff86da}\label{classMatrix_ae0af60a11ec3d088978bfb2506ff86da} 
-\index{Matrix@{Matrix}!operator()@{operator()}}
-\index{operator()@{operator()}!Matrix@{Matrix}}
-\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily double \& Matrix\+::operator() (\begin{DoxyParamCaption}\item[{int}]{p\+\_\+row,  }\item[{int}]{p\+\_\+col }\end{DoxyParamCaption})}
-
-\Hypertarget{classMatrix_aa351bfbb2f08beca05ed321245fcfe39}\label{classMatrix_aa351bfbb2f08beca05ed321245fcfe39} 
-\index{Matrix@{Matrix}!operator()@{operator()}}
-\index{operator()@{operator()}!Matrix@{Matrix}}
-\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily const double \& Matrix\+::operator() (\begin{DoxyParamCaption}\item[{int}]{p\+\_\+row,  }\item[{int}]{p\+\_\+col }\end{DoxyParamCaption}) const}
-
-\Hypertarget{classMatrix_a7bb1fa9276993667726903cf190fe5dc}\label{classMatrix_a7bb1fa9276993667726903cf190fe5dc} 
-\index{Matrix@{Matrix}!operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}}
-\index{operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}!Matrix@{Matrix}}
-\doxysubsubsection{\texorpdfstring{operator\texorpdfstring{$\ast$}{*}()}{operator*()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classMatrix}{Matrix}} Matrix\+::operator\texorpdfstring{$\ast$}{*} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMatrix}{Matrix}} \&}]{p\+\_\+other }\end{DoxyParamCaption}) const}
-
 \Hypertarget{classMatrix_a924305f95e834243515dbb15126ddebb}\label{classMatrix_a924305f95e834243515dbb15126ddebb} 
 \index{Matrix@{Matrix}!operator+@{operator+}}
 \index{operator+@{operator+}!Matrix@{Matrix}}
 \doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classMatrix}{Matrix}} Matrix\+::operator+ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMatrix}{Matrix}} \&}]{p\+\_\+other }\end{DoxyParamCaption}) const}
 
+
+
+Addition operator for matrices. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+other} & \doxylink{classMatrix}{Matrix} to add. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting matrix after addition. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & if matrices are not of the same size. \\
+\hline
+\end{DoxyExceptions}
 \Hypertarget{classMatrix_aba40a8a920162bceef7771fc9dc3d118}\label{classMatrix_aba40a8a920162bceef7771fc9dc3d118} 
 \index{Matrix@{Matrix}!operator-\/@{operator-\/}}
 \index{operator-\/@{operator-\/}!Matrix@{Matrix}}
 \doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classMatrix}{Matrix}} Matrix\+::operator-\/ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMatrix}{Matrix}} \&}]{p\+\_\+other }\end{DoxyParamCaption}) const}
 
+
+
+Subtraction operator for matrices. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+other} & \doxylink{classMatrix}{Matrix} to subtract. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Resulting matrix after subtraction. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & if matrices are not of the same size. \\
+\hline
+\end{DoxyExceptions}
 \Hypertarget{classMatrix_a639135233e3348f7a26585fab41a5a57}\label{classMatrix_a639135233e3348f7a26585fab41a5a57} 
 \index{Matrix@{Matrix}!operator=@{operator=}}
 \index{operator=@{operator=}!Matrix@{Matrix}}
 \doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classMatrix}{Matrix}} \& Matrix\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMatrix}{Matrix}} \&}]{p\+\_\+other }\end{DoxyParamCaption})}
 
+
+
+Assignment operator for the \doxylink{classMatrix}{Matrix} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+other} & \doxylink{classMatrix}{Matrix} to assign from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Reference to the assigned matrix. 
+\end{DoxyReturn}
 \Hypertarget{classMatrix_a99ba97122b8fdd54e95290caf80fc8e2}\label{classMatrix_a99ba97122b8fdd54e95290caf80fc8e2} 
 \index{Matrix@{Matrix}!print@{print}}
 \index{print@{print}!Matrix@{Matrix}}
@@ -154,6 +269,13 @@ Print the matrix to the console.
 \doxysubsubsection{\texorpdfstring{transpose()}{transpose()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classMatrix}{Matrix}} Matrix\+::transpose (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
+
+
+Transpose the matrix. 
+
+\begin{DoxyReturn}{Returns}
+Transposed matrix. 
+\end{DoxyReturn}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

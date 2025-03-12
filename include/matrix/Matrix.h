@@ -25,7 +25,6 @@ public:
     Matrix operator*(const Matrix& p_other) const;
     
     Matrix transpose() const;
-    Matrix dot_product(const Matrix& p_other) const;
 
     // Utility Functions
     int get_rows() const;

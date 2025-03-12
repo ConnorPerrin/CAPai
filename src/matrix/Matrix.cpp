@@ -145,27 +145,6 @@ Matrix Matrix::transpose() const {
 }
 
 /**
- * @brief Perform element-wise multiplication (dot product) of two matrices.
- * @param p_other Matrix to multiply with.
- * @return Resulting matrix after element-wise multiplication.
- * @throws std::invalid_argument if matrices are not of the same size.
- */
-Matrix Matrix::dot_product(const Matrix& p_other) const {
-    if (m_rows != p_other.get_rows() || m_cols != p_other.get_cols()) {
-        throw std::invalid_argument("Matrices must be of the same size for element-wise multiplication.");
-    }
-
-    Matrix result(m_rows, m_cols);
-    for (int row = 0; row < m_rows; ++row) {
-        for (int col = 0; col < m_cols; ++col) {
-            result(row, col) = m_data[row][col] * p_other(row, col);
-        }
-    }
-
-    return result;
-}
-
-/**
  * @brief Get the number of rows in the matrix.
  * @return Number of rows.
  */
